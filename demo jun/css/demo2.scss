@@ -1,0 +1,31 @@
+@font-face {
+    font-family: NYPFontRegular;
+    src: url('fonts/font/DINNextLTPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+      }
+ @font-face {
+    font-family: NYPFontMedium;
+    src: url('fonts/font/font/DINNextLTPro-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+    } 
+    @font-face {
+        font-family: NYPFontBold;
+        src: url('fonts/font/font/DINPro-Bold.ttf');
+        font-weight: bold;
+        font-style: normal;
+    } 
+h3{ color:red;} 
+p{margin-bottom:0px;}  
+strong{font-size:14px;margin-bottom:15px;} 
+.container{
+    margin:40px auto;
+}
+.post{
+position:relative;
+}
+.post .thumbnail{padding:0px;}
+.post .post-date{position:absolute;background-color:red;width:60px; height:80px;margin-left:20px;color:#fff;}
+.post img{width:100%;}
+
