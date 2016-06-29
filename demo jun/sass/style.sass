@@ -114,6 +114,35 @@ img
   position: absolute
   bottom: 0px
   right: 16px
+.footer-content
+  li
+    color: red
+    position: relative
+    span
+      position: absolute
+      display: none
+    a
+      padding: 0px
+
+@media (max-width: 992px)
+  .footer-content
+    li
+      span
+        display: block
+        top: 7px
+        right: 0px
+    li
+      ul
+        display: none
+    li:hover
+      ul
+        display: block
+      a
+        margin-left: 15px
+        border-bottom: 1px solid #ddd
+
+
+
 
 /*# sourceMappingURL=demo2.css.map */
 
