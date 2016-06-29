@@ -5,16 +5,38 @@ h3 { color: red; }
 
 p { margin-bottom: 0px; }
 
-strong { font-size: 14px; margin-bottom: 15px; }
+span { font-size: 12px; }
+
+strong { font-size: 12px; line-height: 12px; }
+
+img { width: 100%; }
 
 .container { margin: 40px auto; }
 
 .post { position: relative; }
 
-.post .thumbnail { padding: 0px; }
+.post-content .thumbnail { padding: 0px; }
 
-.post .post-date { position: absolute; background-color: red; width: 60px; height: 80px; margin-left: 20px; color: #fff; }
+.post-content .post-date { position: absolute; background-color: red; margin-left: 20px; padding: 20px 15px 10px 15px; }
 
-.post img { width: 100%; }
+.post-content .post-date:before { content: ''; position: absolute; bottom: -10px; width: 0; height: 0; left: 0; border-top: 10px solid red; border-right: 50px solid transparent; }
+
+.post-content .post-date:after { right: 0; border-top: 10px solid red; border-left: 50px solid transparent; content: ''; position: absolute; bottom: -10px; width: 0; height: 0; }
+
+.post-content .post-date p { color: #fff; text-align: center; font-weight: 700; }
+
+.post-content .caption { padding-left: 20px; padding-right: 20px; }
+
+.post-content .caption p:last-child { padding-top: 20px; padding-bottom: 20px; }
+
+.media { padding: 20px 15px 20px 15px; border: 1px solid #ddd; }
+
+.media img { width: 50px; height: 50px; border-radius: 50%; }
+
+.media-body p:nth-child(1), .media-body p:nth-child(2), .media-body p:nth-child(3) { line-height: 20px; }
+
+.media-body p:nth-child(1) { color: red; }
+
+.media-body p:last-child { margin-top: 20px; }
 
 /*# sourceMappingURL=demo2.css.map */
