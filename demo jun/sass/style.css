@@ -117,13 +117,14 @@ img {
   right: 16px; }
 
 .footer-content li h6 {
-  color: red;
+  color: #464646;
   position: relative;
   border-bottom: 1px solid #ddd;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700; }
 .footer-content li span {
   position: absolute;
   display: none; }
@@ -131,6 +132,8 @@ img {
   padding: 10px 0px; }
 
 @media (max-width: 992px) {
+  .footer-content li h6:hover {
+    color: red; }
   .footer-content li span {
     display: block;
     top: 5px;
