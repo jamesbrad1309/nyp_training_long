@@ -97,8 +97,6 @@ img {
 
 .media-industry {
   border: 1px solid #ddd; }
-  .media-industry img {
-    width: 250px; }
 
 .industry-post {
   margin-bottom: 30px; }
@@ -109,6 +107,9 @@ img {
     font-family: NYPFontBold;
     font-size: 18px;
     margin-bottom: 5px; }
+
+.media-industry-left {
+  width: 40%; }
 
 .media-industry-button {
   position: absolute;
