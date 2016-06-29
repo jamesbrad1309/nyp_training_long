@@ -1,3 +1,18 @@
+@font-face {
+  font-family: NYPFontRegular;
+  src: url("../fonts/font/DINNextLTPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: NYPFontMedium;
+  src: url("../fonts/font/DINNextLTPro-Medium.otf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: NYPFontBold;
+  src: url("../fonts/font/DINPro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
 h3 {
   color: #031a82;
   line-height: 700; }
