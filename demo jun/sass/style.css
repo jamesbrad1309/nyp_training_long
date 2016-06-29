@@ -80,17 +80,33 @@ img {
     height: 50px;
     border-radius: 50%; }
 
-.media-body p:nth-child(1), .media-body p:nth-child(2), .media-body p:nth-child(3) {
+.media-content-body p:nth-child(1), .media-content-body p:nth-child(2), .media-content-body p:nth-child(3) {
   line-height: 20px; }
-.media-body p:nth-child(1) {
+.media-content-body p:nth-child(1) {
   color: red; }
-.media-body p:last-child {
+.media-content-body p:last-child {
   margin-top: 20px; }
 
 .Carousel-button {
   margin-top: 20px; }
   .Carousel-button a:hover {
     color: transparent; }
+
+.industry {
+  position: relative; }
+
+.media-industry {
+  border: 1px solid #ddd; }
+  .media-industry img {
+    width: 250px; }
+
+.media-industry-content {
+  padding: 25px 62px 25px 20px; }
+
+.media-industry-button {
+  position: absolute;
+  bottom: 0px;
+  right: 16px; }
 
 /*# sourceMappingURL=demo2.css.map */
 /*# sourceMappingURL=style.css.map */
