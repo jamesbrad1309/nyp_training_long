@@ -85,6 +85,9 @@ img {
   .post-content .caption p:last-child {
     padding-top: 20px;
     padding-bottom: 20px; }
+  .post-content .caption p:nth-child(3) {
+    font-weight: 700;
+    font-family: NYPFontBold; }
 
 .media-content {
   padding: 20px 15px 20px 15px;
