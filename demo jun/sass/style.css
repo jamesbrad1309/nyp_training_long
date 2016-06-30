@@ -82,15 +82,18 @@ img {
   padding: 20px 15px 20px 15px;
   border: 1px solid #ddd; }
   .media-content img {
-    width: 50px;
+    width: 100%;
     border-radius: 50%; }
 
-.media-content-body p:nth-child(1), .media-content-body p:nth-child(2), .media-content-body p:nth-child(3) {
-  line-height: 20px; }
-.media-content-body p:nth-child(1) {
-  color: red; }
-.media-content-body p:last-child {
-  margin-top: 20px; }
+.media-content-body {
+  width: 80%;
+  padding-left: 10px; }
+  .media-content-body p:nth-child(1), .media-content-body p:nth-child(2), .media-content-body p:nth-child(3) {
+    line-height: 20px; }
+  .media-content-body p:nth-child(1) {
+    color: red; }
+  .media-content-body p:last-child {
+    margin-top: 20px; }
 
 .Carousel-button {
   margin-top: 20px; }
@@ -124,7 +127,7 @@ img {
   right: 16px; }
 
 #owl-demo .item {
-  background: #3fbf79;
+  background: #fff;
   padding: 30px 0px;
   margin: 10px;
   color: #FFF;
@@ -132,9 +135,21 @@ img {
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center; }
+  #owl-demo .item .media-content-body p {
+    color: black;
+    text-align: left; }
 
 .customNavigation {
   text-align: center; }
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: #031a82;
+  border-radius: 0px;
+  padding: 15px 23px 15px 23px;
+  opacity: 1; }
+.owl-theme .owl-controls .owl-buttons i {
+  font-size: 15px;
+  color: #fff; }
 
 .customNavigation a {
   -webkit-user-select: none;
@@ -143,6 +158,12 @@ img {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-controls {
+  text-align: left; }
+
+.owl-pagination {
+  display: none; }
 
 .footer-content li h6 {
   color: #464646;

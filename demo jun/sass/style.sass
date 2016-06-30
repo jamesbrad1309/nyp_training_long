@@ -82,10 +82,12 @@ img
   padding: 20px 15px 20px 15px
   border: 1px solid #ddd
   img
-    width: 50px
+    width: 100%
     border-radius: 50%
 
 .media-content-body
+  width: 80%
+  padding-left: 10px
   p:nth-child(1), p:nth-child(2),p:nth-child(3)
     line-height: 20px
   p:nth-child(1)
@@ -124,7 +126,7 @@ img
 // silder showw
 #owl-demo
   .item
-    background: #3fbf79
+    background: #fff
     padding: 30px 0px
     margin: 10px
     color: #FFF
@@ -132,9 +134,23 @@ img
     -moz-border-radius: 3px
     border-radius: 3px
     text-align: center
-
+    .media-content-body
+      p
+        color: black
+        text-align: left
 .customNavigation
   text-align: center
+.owl-theme
+  .owl-controls
+    .owl-buttons
+      div
+        background : #031a82
+        border-radius: 0px
+        padding: 15px 23px 15px 23px
+        opacity: 1
+      i
+        font-size: 15px
+        color: #fff
 
 //use styles below to disable ugly selection
 .customNavigation
@@ -145,7 +161,11 @@ img
     -ms-user-select: none
     user-select: none
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-
+.owl-theme
+  .owl-controls
+    text-align: left
+.owl-pagination
+  display: none
 .footer-content
   li
     h6
