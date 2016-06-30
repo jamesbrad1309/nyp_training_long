@@ -162,7 +162,8 @@ img {
   background: #031a82;
   border-radius: 0px;
   padding: 15px 23px 15px 23px;
-  opacity: 1; }
+  opacity: 1;
+  margin: 0 2px 0 2px; }
 .owl-theme .owl-controls .owl-buttons i {
   font-size: 15px;
   color: #fff; }
