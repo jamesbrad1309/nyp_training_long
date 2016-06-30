@@ -23,8 +23,7 @@ h3 {
   font-weight: 700; }
 
 h5 {
-  font-family: NYPFotnBold;
-  font-weight: 700; }
+  font-family: NYPFotnBold; }
 
 p {
   margin-bottom: 0px; }
@@ -202,7 +201,7 @@ img {
   margin-top: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: NYPFontBold; }
+  font-family: NYPFotnBold; }
 .footer-content li span {
   position: absolute;
   display: none; }
