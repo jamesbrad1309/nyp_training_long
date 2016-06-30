@@ -205,9 +205,15 @@ img {
     top: 5px;
     right: 0px; }
   .footer-content li ul {
-    display: none; }
+    display: none;
+    transition: all 4s ease;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease; }
   .footer-content li:hover ul {
-    display: block; }
+    display: block;
+    transition: all 4s ease;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease; }
   .footer-content li:hover a {
     margin-left: 15px;
     border-bottom: 1px solid #ddd; }
