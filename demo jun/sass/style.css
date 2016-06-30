@@ -90,8 +90,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px; }
   .post-content .caption p:nth-child(3) {
-    font-weight: 700;
-    font-family: NYPFontBold; }
+    font-weight: 700; }
 
 .media-content {
   padding: 20px 15px 20px 15px;
@@ -129,7 +128,6 @@ img {
   padding: 15px 62px 15px 20px;
   width: 55%; }
   .media-industry-content p:first-child {
-    font-family: NYPFontBold;
     font-size: 18px;
     margin-bottom: 5px; }
 
