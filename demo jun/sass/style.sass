@@ -46,13 +46,17 @@ img
     padding: 0px
   .post-date
     position: absolute
-    background-color: red
+    background-color: #dc1917
     margin-left: 20px
     padding: 20px 15px 10px 15px
-    p
+    p:first-child
       color: #fff
       text-align: center
       font-weight: 700
+      font-size: 24px
+    p:last-child
+      color: #fff
+      line-height: 5px
     &:before
       content: ''
       position: absolute
@@ -60,11 +64,11 @@ img
       width: 0
       height: 0
       left: 0
-      border-top: 10px solid red
+      border-top: 10px solid #dc1917
       border-right: 50px solid transparent
     &:after
       right: 0
-      border-top: 10px solid red
+      border-top: 10px solid #dc1917
       border-left: 50px solid transparent
       content: ''
       position: absolute
