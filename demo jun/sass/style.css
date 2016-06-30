@@ -52,6 +52,7 @@ img {
   position: absolute;
   background-color: #dc1917;
   margin-left: 20px;
+  margin-top: 1px;
   padding: 20px 15px 10px 15px; }
   .post-content .post-date p:first-child {
     color: #fff;
@@ -189,7 +190,7 @@ img {
   margin-top: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 700; }
+  font-family: NYPFontBold; }
 .footer-content li span {
   position: absolute;
   display: none; }
