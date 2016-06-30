@@ -13,6 +13,10 @@
   src: url("../fonts/font/DINPro-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
+
 h3 {
   color: #031a82;
   font-weight: 700; }
@@ -90,7 +94,7 @@ img {
     border-radius: 50%; }
 
 .media-content-body {
-  width: 80%;
+  width: 82%;
   padding-left: 10px; }
   .media-content-body p:nth-child(1), .media-content-body p:nth-child(2), .media-content-body p:nth-child(3) {
     line-height: 20px; }
@@ -108,14 +112,15 @@ img {
   position: relative; }
 
 .media-industry {
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  position: relative; }
 
 .industry-post {
   margin-bottom: 30px; }
 
 .media-industry-content {
-  padding: 25px 62px 25px 20px;
-  width: 52%; }
+  padding: 15px 62px 15px 20px;
+  width: 55%; }
   .media-industry-content p:first-child {
     font-family: NYPFontBold;
     font-size: 18px;
@@ -128,7 +133,7 @@ img {
 .media-industry-button {
   position: absolute;
   bottom: 0px;
-  right: 16px; }
+  right: 0px; }
 
 #owl-demo .item {
   background: #fff;
@@ -138,6 +143,8 @@ img {
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center; }
+  #owl-demo .item .media-content-body p:first-child {
+    color: #031a82; }
   #owl-demo .item .media-content-body p {
     color: black;
     text-align: left; }
@@ -184,6 +191,10 @@ img {
   padding: 10px 0px; }
 
 @media (max-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    padding-left: 15px;
+    padding-right: 15px; }
+
   .footer-content li h6:hover {
     color: red; }
   .footer-content li span {
@@ -196,7 +207,11 @@ img {
     display: block; }
   .footer-content li:hover a {
     margin-left: 15px;
-    border-bottom: 1px solid #ddd; } }
+    border-bottom: 1px solid #ddd; }
+
+  #demo {
+    padding-left: 15px;
+    padding-right: 15px; } }
 /*# sourceMappingURL=demo2.css.map */
 /*# sourceMappingURL=style.css.map */
 
