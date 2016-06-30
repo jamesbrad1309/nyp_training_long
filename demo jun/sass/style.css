@@ -9,7 +9,7 @@
   font-weight: 500;
   font-style: normal; }
 @font-face {
-  font-family: NYPFontBold;
+  font-family: NYPFotnBold;
   src: url("../fonts/font/DINPro-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
@@ -19,10 +19,12 @@
 
 h3 {
   color: #031a82;
-  font-family: NYPFontBold; }
+  font-family: NYPFontRegular;
+  font-weight: 700; }
 
 h5 {
-  font-family: NYPFontBold; }
+  font-family: NYPFotnBold;
+  font-weight: 700; }
 
 p {
   margin-bottom: 0px; }
@@ -52,15 +54,18 @@ img {
   background-color: #dc1917;
   margin-left: 20px;
   margin-top: 1px;
-  padding: 20px 15px 10px 15px; }
-  .post-content .post-date p:first-child {
+  padding: 10px 10px 10px 10px; }
+  .post-content .post-date h3 {
     color: #fff;
     text-align: center;
-    font-weight: 700;
-    font-size: 24px; }
-  .post-content .post-date p:last-child {
+    font-family: NYPFotnBold;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 30px; }
+  .post-content .post-date p {
     color: #fff;
-    line-height: 5px; }
+    line-height: 19px;
+    font-size: 24px; }
   .post-content .post-date:before {
     content: "";
     position: absolute;
@@ -210,7 +215,7 @@ img {
     width: 30px;
     margin-right: 20px; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   .skills-content-body {
     margin-top: 30px; }
     .skills-content-body p {
