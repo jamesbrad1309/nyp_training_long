@@ -9,7 +9,6 @@
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 		<link type="text/css" rel="stylesheet" href="sass/style.css" />
 
 	</head>
@@ -120,7 +119,7 @@
 							<div class="media media-content">
 							  <div class="media-left">
 								<a href="#">
-								  <img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+								  <img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							  </div>
 							  <div class="media-body media-content-body">
@@ -135,7 +134,7 @@
 							<div class="media media-content">
 							  <div class="media-left">
 								<a href="#">
-								  <img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+								  <img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							  </div>
 							 <div class="media-body media-content-body">
@@ -150,7 +149,7 @@
 							<div class="media media-content">
 							  <div class="media-left">
 								<a href="#">
-								  <img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+								  <img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							  </div>
 							  <div class="media-body media-content-body">
@@ -167,7 +166,7 @@
 							<div class="media media-content">
 							  <div class="media-left">
 								<a href="#">
-								  <img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+								  <img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							  </div>
 							  <div class="media-body media-content-body">
@@ -182,7 +181,7 @@
 							<div class="media media-content">
 							  <div class="media-left">
 								<a href="#">
-								  <img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+								  <img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							  </div>
 							 <div class="media-body media-content-body">
@@ -197,7 +196,7 @@
 							<div class="media media-content">
 							<div class="media-left">
 								<a href="#">
-									<img class="media-object" src="img/events/event-01.jpg" alt="sdfe"  >
+									<img class="media-object" src="img/events/event-04.jpg" alt="sdfe"  >
 								</a>
 							</div>
 							<div class="media-body media-content-body">
@@ -289,6 +288,62 @@
 					<button type="button" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
 				</div>
 			</section>
+		</div>
+		<div class="row">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item"><h1>1</h1></div>
+				<div class="item"><h1>2</h1></div>
+				<div class="item"><h1>3</h1></div>
+				<div class="item"><h1>4</h1></div>
+				<div class="item"><h1>5</h1></div>
+				<div class="item"><h1>6</h1></div>
+				<div class="item"><h1>7</h1></div>
+				<div class="item"><h1>8</h1></div>
+				<div class="item"><h1>9</h1></div>
+				<div class="item"><h1>10</h1></div>
+				<div class="item"><h1>11</h1></div>
+				<div class="item"><h1>12</h1></div>
+				<div class="item"><h1>13</h1></div>
+				<div class="item"><h1>14</h1></div>
+				<div class="item"><h1>15</h1></div>
+				<div class="item"><h1>16</h1></div>
+			</div>
+
+			<div class="customNavigation">
+				<a class="btn prev">Previous</a>
+				<a class="btn next">Next</a>
+				<a class="btn play">Autoplay</a>
+				<a class="btn stop">Stop</a>
+			</div>
+			<script>
+				$(document).ready(function() {
+
+					var owl = $("#owl-demo");
+
+					owl.owlCarousel({
+						items : 10, //10 items above 1000px browser width
+						itemsDesktop : [1000,5], //5 items between 1000px and 901px
+						itemsDesktopSmall : [900,3], // betweem 900px and 601px
+						itemsTablet: [600,2], //2 items between 600 and 0
+						itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+					});
+
+					// Custom Navigation Events
+					$(".next").click(function(){
+						owl.trigger('owl.next');
+					})
+					$(".prev").click(function(){
+						owl.trigger('owl.prev');
+					})
+					$(".play").click(function(){
+						owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+					})
+					$(".stop").click(function(){
+						owl.trigger('owl.stop');
+					})
+
+				});
+			</script>
 		</div>
 	</div>
 	<footer>

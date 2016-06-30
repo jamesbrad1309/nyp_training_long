@@ -29,9 +29,14 @@ strong
 
 img
   width: 100%
-
 .container
   margin: 40px auto
+.btn
+  &:focus, &:active,&:active:focus
+    border-color: transparent
+    outline: none
+    outline-offset: 0px
+    box-shadow: none
 
 .post
   position: relative
@@ -78,7 +83,6 @@ img
   border: 1px solid #ddd
   img
     width: 50px
-    height: 50px
     border-radius: 50%
 
 .media-content-body
@@ -104,16 +108,44 @@ img
 
 .media-industry-content
   padding: 25px 62px 25px 20px
+  width: 52%
   p:first-child
     font-family: NYPFontBold
     font-size: 18px
     margin-bottom: 5px
-.media-industry-left
-  width: 40%
+.media-industry
+  .media-industry-left , .media-industry-content
+    display: block
+    float: left
 .media-industry-button
   position: absolute
   bottom: 0px
   right: 16px
+// silder showw
+#owl-demo
+  .item
+    background: #3fbf79
+    padding: 30px 0px
+    margin: 10px
+    color: #FFF
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    text-align: center
+
+.customNavigation
+  text-align: center
+
+//use styles below to disable ugly selection
+.customNavigation
+  a
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
 .footer-content
   li
     h6
