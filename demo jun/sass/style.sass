@@ -30,6 +30,8 @@ strong
 
 img
   width: 100%
+
+
 .container
   margin: 40px auto
 .btn
@@ -186,6 +188,33 @@ img
     padding-left: 15px
   p:last-child
     margin-top: 20px
+/*tab-------*/
+.main-tabs-menu
+  width: 100%
+  border-bottom: 1px solid #ddd
+  position: relative
+.main-nav-tabs
+  position: absolute
+  top: -3px
+  li
+    a
+      strong
+        background: url("../img/events/j-icon-1.png")no-repeat left
+        padding-left: 25px
+.main-nav-tabs-mobile
+  display: none
+  li
+    position: relative
+    a
+      margin-right: 0px
+      border: none
+      strong
+        background: url("../img/events/j-icon-1.png")no-repeat left
+        padding-left: 25px
+.caret
+  position: absolute
+  right: 10px
+  top: 20px
 .footer-content
   img
     width: 90px
@@ -213,11 +242,36 @@ img
       margin-right: 20px
 
 @media (max-width: 1199px)
+  //*dropdown*
+  .nav-tabs>li.active>a
+    border: none
+  a:focus
+    outline-offset: 0
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+    border : none
+
   .skills-content-body
     margin-top: 30px
     p
       padding-left: 0px
-
+  .main-tabs-menu
+    border-bottom: none
+  .main-nav-tabs
+    display: none
+  .main-nav-tabs-mobile
+    display: block
+    .dropdown
+      width: 100%
+      border: 1px solid #ddd
+    >li
+      >a:hover,a:focus
+        border-color: transparent
+        margin-right: 0px
+        border: none
+        color: red
+        background-color:  transparent
+    .dropdown-menu
+      width: 100%
 @media (max-width: 992px)
   .col-lg-1,.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
     padding-left: 15px
