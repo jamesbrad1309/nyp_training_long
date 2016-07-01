@@ -210,6 +210,24 @@ img {
       padding-top: 5px;
       padding-bottom: 5px; }
 
+.main-tabs-menu-2 {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding-bottom: 19px; }
+
+.main-nav-tabs-2 {
+  position: absolute; }
+  .main-nav-tabs-2 li a {
+    background: url("../img/events/j-icon-1.png") no-repeat 10px; }
+  .main-nav-tabs-2 li p {
+    margin-left: 23px;
+    line-height: 14px;
+    width: 200px; }
+  .main-nav-tabs-2 li:first-child a p {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+
 .main-nav-tabs-mobile {
   display: none; }
   .main-nav-tabs-mobile li {
