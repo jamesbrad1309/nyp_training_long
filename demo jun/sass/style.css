@@ -191,19 +191,24 @@ img {
   margin-top: 20px; }
 
 /*tab------- */
+.nav > li > a, .dropdown-menu > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 .main-tabs-menu {
   width: 100%;
   border-bottom: 1px solid #ddd;
-  position: relative; }
+  position: relative;
+  padding-bottom: 13px; }
 
 .main-nav-tabs {
-  position: absolute;
-  top: -3px; }
-  .main-nav-tabs li a strong {
-    background: url("../img/events/j-icon-1.png") no-repeat left;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px; }
+  position: absolute; }
+  .main-nav-tabs li a {
+    background: url("../img/events/j-icon-1.png") no-repeat 10px; }
+    .main-nav-tabs li a strong {
+      margin-left: 23px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
 
 .main-nav-tabs-mobile {
   display: none; }
