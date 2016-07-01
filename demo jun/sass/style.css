@@ -201,7 +201,9 @@ img {
   top: -3px; }
   .main-nav-tabs li a strong {
     background: url("../img/events/j-icon-1.png") no-repeat left;
-    padding-left: 25px; }
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
 .main-nav-tabs-mobile {
   display: none; }
@@ -243,6 +245,9 @@ img {
     width: 30px;
     margin-right: 20px; }
 
+@media (max-width: 1240px) {
+  .main-nav-tabs li a strong {
+    font-size: 15px; } }
 @media (max-width: 1199px) {
   .nav-tabs > li.active > a {
     border: none; }
