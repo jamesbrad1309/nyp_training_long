@@ -246,6 +246,55 @@ img
   ul
     li
       border-bottom: 1px solid  #ddd
+
+/* --------------------main-life-----------*/
+.main-lift-table
+  padding-left: 3.5px
+  padding-right: 3.5px
+  margin-top: 10px
+  margin-bottom: 10px
+  .main-life-post
+    position: relative
+    overflow: hidden
+    >img
+      transition: transform 0.5s ease
+      -moz-transition: -moz-transform 0.5s ease
+      -o-transition: -o-transform 0.5s ease
+    &:hover .main-life-content>p
+      color: red
+    &:hover >img
+      transform: scale(1.5)
+      -ms-transform: scale(1.5)
+      -webkit-transform: scale(1.5)
+      -moz-transform: scale(1.5)
+    &:hover .main-life-content
+      bottom: 0px
+      transition: all 0.5s ease
+      -ms-transition: all 0.5s ease
+      -webkit-transition: all 0.5s ease
+      -moz-transition: all 0.5s ease
+    .main-life-content
+      position: absolute
+      background-color : black
+      padding-top: 10px
+      padding-bottom : 10px
+      bottom: -66px
+      opacity: 0.7
+      img
+        width: 50px
+        padding-left: 5px
+        padding-right: 5px
+      p
+        width: 80%
+        border: 1px solid black
+        color: #fff
+        transition: color 0.5s ease
+        -moz-transition: -moz-transform 0.5s ease
+        -o-transition: -o-transform 0.5s ease
+      img , p
+        display: block
+        float: left
+
 .footer-content
   img
     width: 90px
@@ -272,6 +321,8 @@ img
       width: 30px
       margin-right: 20px
 @media (max-width: 1240px)
+  .main-life-content
+    width: 100%
   .main-nav-tabs
     li
       a
