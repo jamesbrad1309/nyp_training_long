@@ -367,7 +367,7 @@ img {
     padding-left: 15px;
     padding-right: 15px; }
 
-  .media-left {
+  .media-content-image {
     width: 12%; }
 
   .footer-content li h6:hover {
@@ -392,6 +392,12 @@ img {
     border-bottom: none; }
   .footer-content .footer-mobile-img {
     display: block; } }
+@media (max-width: 600px) {
+  .media-content-body {
+    width: 50%; } }
+@media (max-width: 414px) {
+  .media-content-body {
+    width: 16%; } }
 /*# sourceMappingURL=demo2.css.map */
 /*# sourceMappingURL=style.css.map */
 
