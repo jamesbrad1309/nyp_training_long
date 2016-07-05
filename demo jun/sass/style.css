@@ -261,7 +261,10 @@ img {
       -moz-transition: -moz-transform 0.5s ease;
       -o-transition: -o-transform 0.5s ease; }
     .main-lift-table .main-life-post:hover .main-life-content > p {
-      color: red; }
+      color: red;
+      transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -o-transition: all 2s ease; }
     .main-lift-table .main-life-post:hover > img {
       transform: scale(1.5);
       -ms-transform: scale(1.5);
@@ -287,10 +290,7 @@ img {
       .main-lift-table .main-life-post .main-life-content p {
         width: 80%;
         border: 1px solid black;
-        color: #fff;
-        transition: color 0.5s ease;
-        -moz-transition: -moz-transform 0.5s ease;
-        -o-transition: -o-transform 0.5s ease; }
+        color: #fff; }
       .main-lift-table .main-life-post .main-life-content img, .main-lift-table .main-life-post .main-life-content p {
         display: block;
         float: left; }
