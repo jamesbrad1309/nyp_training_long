@@ -294,29 +294,40 @@ img {
         display: block;
         float: left; }
 
+.footer-content h6 {
+  font-family: NYPFotnBold; }
+.footer-content .nav > li > a:hover {
+  background-color: transparent; }
 .footer-content img {
-  width: 90px;
-  padding-top: 10px; }
+  width: inherit; }
 .footer-content li h6 {
   color: #464646;
   position: relative;
-  border-bottom: 1px solid #ddd;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: NYPFotnBold; }
+  padding-bottom: 10px; }
 .footer-content li span {
   position: absolute;
   display: none; }
 .footer-content li a {
-  padding: 10px 0px; }
+  padding: 5px 0px; }
 
 .footer-mobile-img li {
   float: left; }
   .footer-mobile-img li img {
-    width: 30px;
+    height: 30px;
     margin-right: 20px; }
+
+.footer-content .nav > li.active > h6 {
+  color: #DE1D18;
+  border-bottom: 2px solid #DE1D18; }
+  .footer-content .nav > li.active > h6 span.fa-angle-right {
+    color: #DE1D18;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
 
 @media (max-width: 1240px) {
   .main-life-content {
@@ -354,7 +365,7 @@ img {
       border-color: transparent;
       margin-right: 0px;
       border: none;
-      color: red;
+      color: #DE1D18;
       background-color: transparent; }
     .main-nav-tabs-mobile .dropdown-menu {
       width: 100%; } }
@@ -366,28 +377,34 @@ img {
   .media-content-image {
     width: 12%; }
 
-  .footer-content li h6:hover {
-    color: red; }
+  .footer-content .footer-mobile-img li {
+    border-bottom: none;
+    margin-left: 0px;
+    margin-right: 15px; }
+  .footer-content li h6 {
+    border-bottom: 1px solid #ddd; }
+  .footer-content li:hover {
+    color: #DE1D18; }
   .footer-content li span {
     display: block;
     top: 11px;
     right: 0px; }
   .footer-content li ul {
     display: none; }
-  .footer-content li:hover ul {
-    display: block; }
-  .footer-content li:hover a {
-    margin-left: 15px;
-    border-bottom: 1px solid #ddd; }
+    .footer-content li ul li {
+      margin-left: 15px;
+      border-bottom: 1px solid #ddd; }
+      .footer-content li ul li:hover a {
+        color: #DE1D18; }
 
   #demo {
     padding-left: 15px;
     padding-right: 15px; }
 
-  .footer-content .footer-mobile {
-    border-bottom: none; }
   .footer-content .footer-mobile-img {
-    display: block; } }
+    display: block; }
+    .footer-content .footer-mobile-img li img {
+      margin-right: 0px; } }
 @media (max-width: 600px) {
   .media-content-body {
     width: 50%; } }

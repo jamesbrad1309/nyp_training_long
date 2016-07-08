@@ -284,7 +284,8 @@
 							</a>
 						</div>
 						<div class="media-body media-industry-content ">
-							<span class="ellipsis_text">consectetuer adipiscing elit.Aenean commodo ligula eg</span>
+							<p id="stuff" class="box">Lorem Ipsum 2014</p >
+							<p id="stuf" class="box">consectetuer adipiscing elit.Aenean commodo ligula eg</p>
 						</div>
 						<div class="media-industry-button">
 							<button type="button" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
@@ -292,14 +293,16 @@
 					</div>
 				</section>
 			</div>
+						<script>
+							$(document).ready(function(){
+								var stringWithShorterURLs = getReplacementString($(".media-industry-content p").text());
 
-						<script src="js/jquery.ThreeDots.js" type="text/javascript"></script>
-						<script type="text/javascript">
-							$(document).ready(function () {
-								var the_obj2 = $('.media-industry-content').ThreeDots({
-									max_rows:1
-								});
-							});
+								function getReplacementString(str){
+									return str.replace(function(match){
+										return match.substring(0,2) + "..."
+									});
+								}});
+
 						</script>
 			<div class="row">
 				<div id="demo">
@@ -725,15 +728,15 @@
 			<div class="row">
 				<section class="col-lg-3 col-md-3 footer-content">
 					<ul class="nav">
-						<li class="footer-content-li">
+						<li >
 							<h6>About NYP <span class="fa fa-angle-right"></span></h6>
-							<ul class="nav  footer-content-nav">
+							<ul class="nav footer-content-nav">
 								<li><a href="#">Overview</a></li>
 								<li><a href="#">Support Centre and Services</a></li>
 								<li><a href="#">Organisational Awards</a></li>
 							</ul>
 						</li>
-						<li class="footer-content-li">
+						<li>
 							<h6>Admissions Info<span class="fa fa-angle-right"></span></h6>
 							<ul class="nav footer-content-nav">
 								<li><a href="#">Full-time Diploma</a></li>
@@ -743,14 +746,14 @@
 						<li>
 							<h6>Certifications<span class="fa fa-angle-right"></span></h6>
 								<ul class="nav footer-content-nav">
-									<li><img src="img/footer/icon_certification.png" alt="" /></li>
-							</ul>
+									<img src="img/footer/icon_certification.png" alt="" />
+								</ul>
 						</li>
 					</ul>
 				</section>
 				<section class="col-lg-3 col-md-3 footer-content">
 					<ul class="nav">
-						<li class="footer-content-li">
+						<li>
 							<h6>Schools<span class="fa fa-angle-right"></span></h6>
 							<ul class="nav footer-content-nav">
 								<li><a href="#">School of Information Technology</a></li>
@@ -768,7 +771,7 @@
 				</section>
 				<section class="col-lg-3 col-md-3 footer-content">
 					<ul class="nav">
-						<li class="footer-content-li">
+						<li >
 							<h6>Schools<span class="fa fa-angle-right"></span></h6>
 							<ul class="nav footer-content-nav">
 								<li><a href="#">School of Information Technology</a></li>
@@ -786,7 +789,7 @@
 				</section>
 				<section class="col-lg-3 col-md-3 footer-content">
 					<ul class="nav ">
-						<li class="footer-content-li">
+						<li >
 							<h6>About NYP<span class="fa fa-angle-right"></span></h6>
 							<ul class="nav footer-content-nav">
 								<li><a href="#">Overview</a></li>
@@ -794,26 +797,48 @@
 								<li><a href="#">Organisational Awards</a></li>
 							</ul>
 						</li>
-						<li class="footer-content-li">
+						<li >
 							<h6>Admissions Info<span class="fa fa-angle-right"></span></h6>
 							<ul class="nav footer-content-nav">
 								<li><a href="#">Full-time Diploma</a></li>
 								<li><a href="#">Working Professionals</a></li>
 							</ul>
 						</li>
-						<li class="footer-content-li">
-							<h6 class="footer-mobile">Certifications </h6>
-							<ul class="nav footer-mobile-img">
+						<div class="footer-mobile-img">
+							<h6 >Certifications </h6>
+							<ul class="nav ">
 								<li><img src="img/footer/icon facebook.svg" alt="" /></li>
 								<li><img src="img/footer/Black_Instagram_icon.svg" alt="" /></li>
 								<li><img src="img/footer/icon tw.svg" alt="" /></li>
 							</ul>
-						</li>
+						</div>
 					</ul>
 				</section>
 			</div>
 		</div>
+			<script>
+				$(document).ready(function(){
+				var screenWidth = $(window).width();
+					$(window).resize(function(){
+						screenWidth = $(window).width();
+					})
+				$(".nav>li").click(function(){
+						if(screenWidth <= 992)
+						if($(this).hasClass('active')){
+							$(this).children('.footer-content-nav').slideUp();
+							$(this).removeClass('active');
 
+					   } else{
+						   $('.footer-content-nav').slideUp();
+						   $(this).children('.footer-content-nav').slideDown();
+						   $('.nav>li').removeClass('active');
+						   $(this).addClass('active');
+
+						}
+					});
+
+				});
+			</script>
 	</footer>
 </body>
 </html>

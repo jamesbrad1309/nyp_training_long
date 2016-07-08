@@ -295,30 +295,46 @@ img
         float: left
 
 .footer-content
+  h6
+    font-family: NYPFotnBold
+  .nav
+    >li
+      >a:hover
+        background-color: transparent
   img
-    width: 90px
-    padding-top: 10px
+    width: inherit
   li
     h6
       color: #464646
       position: relative
-      border-bottom: 1px solid #ddd
       margin-bottom: 0px
       margin-top: 0px
       padding-top: 10px
       padding-bottom: 10px
-      font-family: NYPFotnBold
     span
       position: absolute
       display: none
     a
-      padding: 10px 0px
+      padding: 5px 0px
 .footer-mobile-img
   li
     float: left
     img
-      width: 30px
+      height: 30px
       margin-right: 20px
+.footer-content
+  .nav
+    >li.active
+      >h6
+        color: #DE1D18
+        border-bottom: 2px solid #DE1D18
+        span.fa-angle-right
+          color: #DE1D18
+          transform: rotate(90deg)
+          -webkit-transform: rotate(90deg)
+          -ms-transform: rotate(90deg)
+          -o-transform: rotate(90deg)
+
 @media (max-width: 1240px)
   .main-life-content
     width: 100%
@@ -355,7 +371,7 @@ img
         border-color: transparent
         margin-right: 0px
         border: none
-        color: red
+        color: #DE1D18
         background-color:  transparent
     .dropdown-menu
       width: 100%
@@ -366,9 +382,16 @@ img
   .media-content-image
     width: 12%
   .footer-content
+    .footer-mobile-img
+      li
+        border-bottom: none
+        margin-left: 0px
+        margin-right: 15px
     li
-      h6:hover
-        color: red
+      h6
+        border-bottom: 1px solid #ddd
+      &:hover
+        color: #DE1D18
       span
         display: block
         top: 11px
@@ -376,20 +399,22 @@ img
     li
       ul
         display: none
-      &:hover
-        ul
-          display: block
-        a
+        li
           margin-left: 15px
           border-bottom: 1px solid #ddd
+          &:hover
+            a
+              color: #DE1D18
   #demo
     padding-left: 15px
     padding-right: 15px
   .footer-content
-    .footer-mobile
-      border-bottom: none
     .footer-mobile-img
       display: block
+      li
+        img
+          margin-right: 0px
+
 @media (max-width: 600px)
   .media-content-body
     width: 50%
